@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="content.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form1" class="form_style">
+      <h1>Form Validation</h1>
+      <label class="label_style" for=""> First Name </label>
+      <input
+        id="firstname"
+        class="input1 input_margin"
+        type="text"
+        required
+      /><br />
+      <label class="label_style" for="">Last Name</label>
+      <input id="lastname" class="input1 input_margin" type="text" required />
+      <br />
+      <label class="label_style" for="">Notification Email(s)</label>
+      <input
+        id="email"
+        name="email"
+        class="input_margin"
+        type="email"
+        required
+      /><br />
+      <label class="label_style" for="">Password</label>
+      <input
+        id="password"
+        class="input2 input_margin"
+        type="password"
+        name=""
+        id=""
+      />
+      <br />
+      <label class="label_style" for="">Confirm Password</label>
+      <input
+        id="confirm"
+        class="input3 input_margin"
+        type="password"
+        name=""
+        id=""
+      /><br />
+      <label class="label_style" for="">Contact Number</label>
+      <input
+        type="number"
+        id="contact"
+        class="input_margin"
+        minlength="11"
+      /><br />
+      <label class="label_style" for="">Age</label>
+      <input
+        id="age"
+        class="input4 input_margin"
+        type="number"
+        required
+        min="18"
+        max="151"
+      /><br />
+      <input
+        type="submit"
+        id="myBtn"
+        class="input_margin"
+        value="Submit"
+        disabled="disabled"
+      />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
